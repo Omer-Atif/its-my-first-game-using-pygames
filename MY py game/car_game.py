@@ -138,7 +138,8 @@ while running:
         screen.blit(crash_image, (player.rect.centerx - 45, player.rect.top - 90))
         pygame.draw.rect(screen, red, (0, 50, width, 100))
         font = pygame.font.Font(None, 36)
-        text = font.render('Game over. Play again? (Press Y or N)', True, white)
+        text = font.render('''Game over. Play again? (Press P or Q )''', True, white)
+        print("P = play and Q = quit")
         text_rect = text.get_rect(center=(width / 2, 100))
         screen.blit(text, text_rect)
 
@@ -150,13 +151,13 @@ while running:
                 gameover = False
                 running = False
             elif event.type == KEYDOWN:
-                if event.key == K_y:
+                if event.key == K_p:
                     gameover = False
                     speed = 2
                     score = 0
                     vehicle_group.empty()
                     player.rect.center = (player_x, player_y)
-                elif event.key == K_n:
+                elif event.key == K_q:
                     gameover = False
                     running = False
 
