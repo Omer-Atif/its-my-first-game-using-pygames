@@ -1,6 +1,6 @@
 # its-my-first-game-using-pygames
 
 # created by 
-OMER ATIF 
-DANISH MAZHAR
+OMER ATIF ,
+DANISH MAZHAR ,
 Mazhahr
